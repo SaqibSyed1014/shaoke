@@ -1,0 +1,32 @@
+@tailwind base;
+body{
+    @apply font-dm-sans
+}
+h1, h2, h3, h4, h5, h6{
+    @apply font-public-sans text-[#272D4B] capitalize
+}
+h2{
+    @apply text-[56px] leading-[60px] font-bold tracking-[-1.4px]
+}
+h3{
+    @apply text-[24px] leading-[26px] font-bold
+}
+h4{
+    @apply text-xl leading-[26px] font-bold opacity-70
+}
+p{
+    @apply text-lg text-[#707376] leading-[26px]
+}
+label{
+    @apply text-sm uppercase text-[#272D4B]
+}
+form label{
+    @apply text-lg font-semibold capitalize block pb-3.5
+}
+input, textarea{
+    @apply bg-[#F5F5F5] border border-[#DBDBDB] outline-0 rounded-[5px] py-4 px-3.5 placeholder:text-[#707376] w-full focus:border-[#707376]
+}
+
+@tailwind components;
+
+@tailwind utilities;
