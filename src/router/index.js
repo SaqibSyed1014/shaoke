@@ -11,22 +11,34 @@ const router = createRouter({
     {
       path: '/why-shaoke',
       name: 'WhyUsView',
-      component: () => import('@/views/WhyUs/index.vue')
+      component: () => import('@/views/WhyUs/index.vue'),
+      meta: {
+        title: 'WHY SHAOKE'
+      }
     },
     {
       path: '/solutions',
       name: 'SolutionsView',
-      component: () => import('@/views/Solutions/index.vue')
+      component: () => import('@/views/Solutions/index.vue'),
+      meta: {
+        title: 'Solutions'
+      }
     },
     {
       path: '/cases',
       name: 'CasesView',
-      component: () => import('@/views/CaseSolutions/index.vue')
+      component: () => import('@/views/CaseSolutions/index.vue'),
+      meta: {
+        title: 'Cases'
+      }
     },
     {
       path: '/contact-us',
       name: 'ContactUsView',
-      component: () => import('@/views/ContactUs/index.vue')
+      component: () => import('@/views/ContactUs/index.vue'),
+      meta: {
+        title: 'Contact'
+      }
     },
   ],
   scrollBehavior() {

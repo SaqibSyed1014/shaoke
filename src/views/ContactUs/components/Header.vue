@@ -1,13 +1,12 @@
 <script setup>
 import ContactForm from "@/views/ContactUs/components/ContactForm.vue";
+import PageTitle from "@/@core/components/PageTitle.vue";
 </script>
 
 <template>
   <header class="contact-us-section py-32 pt-40">
     <div class="container">
-      <div class="text-center pb-32">
-        <h2>Contact</h2>
-      </div>
+      <PageTitle />
 
       <div class="grid grid-cols-2 gap-10">
         <div>

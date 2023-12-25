@@ -1,4 +1,6 @@
 <script setup>
+import PageTitle from "@/@core/components/PageTitle.vue";
+
 const cases = [
   {
     name: 'Shipkoo',
@@ -58,9 +60,7 @@ const casesCategories = [
 <template>
   <section class="cases-list-view pb-32 pt-40">
     <div class="container">
-      <div class="text-center pb-32">
-        <h2>Cases</h2>
-      </div>
+      <PageTitle />
 
       <div class="cases-filtration px-5">
         <div class="flex justify-center items-center gap-6 border-b border-[#DBDBDB] pb-5 mb-10">

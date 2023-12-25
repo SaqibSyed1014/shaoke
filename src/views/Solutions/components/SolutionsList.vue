@@ -1,5 +1,6 @@
 <script setup>
 import DetailingWithImage from "@/@core/components/DetailingWithImage.vue";
+import PageTitle from "@/@core/components/PageTitle.vue";
 
 const solutionsList = [
   {
@@ -84,9 +85,7 @@ const solutionsList = [
 <template>
   <section class="solutions-view py-32 pt-40">
     <div class="container">
-      <div class="text-center pb-32">
-        <h2>Solutions</h2>
-      </div>
+      <PageTitle />
 
       <div>
         <template v-for="(item, i) in solutionsList" :key="i">

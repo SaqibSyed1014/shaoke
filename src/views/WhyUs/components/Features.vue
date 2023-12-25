@@ -1,0 +1,86 @@
+<script setup>
+import PageTitle from "@/@core/components/PageTitle.vue";
+</script>
+
+<template>
+  <section class="brand-features pb-32 pt-40">
+    <div class="container">
+      <PageTitle />
+
+      <div class="grid grid-cols-2 gap-20 mb-14">
+        <div>
+          <label>Local</label>
+          <h2 class="py-3.5">Local Expert</h2>
+          <ul>
+            <li>A wealth of local expertise with years of local operation</li>
+            <li>Culturally sensitive</li>
+            <li>Offices in Netherland, UK, Germany, and Shenzhen, China.</li>
+          </ul>
+        </div>
+        <div>
+          <div class="relative">
+            <img src="/images/features/trains.png" alt="Trains">
+            <div class="absolute bottom-8 -left-38 flex gap-5">
+              <div class="bg-primary text-white py-6 pl-9 pr-20 shrink-0">
+                <small>Orders</small>
+                <h2 class="text-inherit">120M</h2>
+                <small>completed last year.</small>
+              </div>
+              <div class="bg-white text-primary py-6 pl-9 pr-20 shrink-0">
+                <small>Monthly</small>
+                <h2 class="text-inherit">80+</h2>
+                <small>Trucks deliver the order.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-20">
+        <div>
+          <div class="relative">
+            <img src="/images/features/plane-cargo.png" alt="Plane">
+            <div class="absolute bottom-8 -right-38 flex gap-5">
+              <div class="bg-white text-primary py-6 pl-9 pr-20 shrink-0">
+                <small>Monthly</small>
+                <h2 class="text-inherit">318+</h2>
+                <small>Boeing 747 processed.</small>
+              </div>
+              <div class="bg-primary text-white py-6 pl-9 pr-20 shrink-0">
+                <small>Orders</small>
+                <h2 class="text-inherit">120M</h2>
+                <small>completed last year.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label>Professional</label>
+          <h2 class="py-3.5">Professional Expert</h2>
+          <ul>
+            <li>Always have a solution</li>
+            <li>Care-free service to leave you focus on your core business</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<style scoped>
+ul li{
+  position: relative;
+  padding-left: 45px;
+}
+ul li:before{
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: theme('colors.primary');
+  position: absolute;
+  left: 0;
+  top: 3px;
+  border-radius: 50%;
+}
+</style>

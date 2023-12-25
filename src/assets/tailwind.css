@@ -14,7 +14,7 @@ h3{
 h4{
     @apply text-xl leading-[26px] font-bold opacity-70
 }
-p{
+p, ul li{
     @apply text-lg text-[#707376] leading-[26px]
 }
 label{
