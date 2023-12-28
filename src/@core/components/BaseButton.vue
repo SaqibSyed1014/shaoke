@@ -1,15 +1,14 @@
 <script setup>
-import {computed} from "vue";
-
 defineProps({
-
+  outlined: Boolean
 })
 
 </script>
 
 <template>
   <button
-      class="bg-primary text-white rounded-[5px] text-base font-bold px-5 py-3"
+      class="flex justify-center items-center gap-2  rounded-[5px] text-base font-bold shrink-0 px-5 py-3"
+      :class="[outlined ? 'bg-white border border-[#707376]' : 'bg-primary text-white']"
   >
     <slot />
   </button>
