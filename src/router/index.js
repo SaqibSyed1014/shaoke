@@ -33,6 +33,14 @@ const router = createRouter({
       }
     },
     {
+      path: '/case-details/shipkoo',
+      name: 'CasesDetailsView',
+      component: () => import('@/views/CaseDetails/index.vue'),
+      meta: {
+        title: 'Shipkoo'
+      }
+    },
+    {
       path: '/contact-us',
       name: 'ContactUsView',
       component: () => import('@/views/ContactUs/index.vue'),

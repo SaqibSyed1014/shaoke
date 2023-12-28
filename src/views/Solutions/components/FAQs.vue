@@ -55,8 +55,8 @@ const faqList = ref([
         </template>
       </div>
 
-      <div class="text-center pt-9 md:pt-14 lg:pt-[76px]">
-        <BaseButton>View All Answers</BaseButton>
+      <div class="pt-9 md:pt-14 lg:pt-[76px]">
+        <BaseButton class="mx-auto">View All Answers</BaseButton>
       </div>
     </div>
   </section>

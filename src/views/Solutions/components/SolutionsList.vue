@@ -83,7 +83,7 @@ const solutionsList = [
 </script>
 
 <template>
-  <section class="solutions-view py-32 pt-40">
+  <section class="solutions-view pb-32 pt-40">
     <div class="container">
       <PageTitle />
 

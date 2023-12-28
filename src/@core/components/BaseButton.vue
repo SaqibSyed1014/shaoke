@@ -7,7 +7,7 @@ defineProps({
 
 <template>
   <button
-      class="flex justify-center items-center gap-2  rounded-[5px] text-base font-bold shrink-0 px-5 py-3"
+      class="flex justify-center items-center gap-2  rounded-[5px] text-base tracking-wider font-bold shrink-0 px-5 py-3"
       :class="[outlined ? 'bg-white border border-[#707376]' : 'bg-primary text-white']"
   >
     <slot />
