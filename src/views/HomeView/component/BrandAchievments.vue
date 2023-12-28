@@ -3,39 +3,39 @@
 </script>
 
 <template>
-  <section class="brand-achievements bg-primary py-24 pb-32">
+  <section class="brand-achievements bg-primary py-24">
     <div class="container">
       <div class="grid grid-cols-2 md:grid-cols-4 justify-center">
-        <div class="text-white border-r border-white text-center">
-          <div class="text-sm">
+        <div class="text-white border-r border-white text-center py-3">
+          <div class="text-sm uppercase pb-3">
             Delivered Packages
           </div>
           <div class="text-6xl">
             7255
           </div>
         </div>
-        <div class="text-white border-r border-white text-center">
-          <div class="text-sm">
-            Delivered Packages
+        <div class="text-white border-r border-white text-center py-3">
+          <div class="text-sm uppercase pb-3.5">
+            KM Per Month
           </div>
           <div class="text-6xl">
-            7255
+            5348
           </div>
         </div>
-        <div class="text-white border-r border-white text-center">
-          <div class="text-sm">
-            Delivered Packages
+        <div class="text-white border-r border-white text-center py-3">
+          <div class="text-sm uppercase pb-3">
+            Tons Of Goods
           </div>
           <div class="text-6xl">
-            7255
+            8500
           </div>
         </div>
-        <div class="text-white text-center">
-          <div class="text-sm">
-            Delivered Packages
+        <div class="text-white text-center py-3">
+          <div class="text-sm uppercase pb-3">
+            Satisfied Clients
           </div>
           <div class="text-6xl">
-            7255
+            3125
           </div>
         </div>
       </div>

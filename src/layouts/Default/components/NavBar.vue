@@ -39,7 +39,7 @@ const navColorCheck = computed(() => {
 
         <ul class="flex gap-4">
           <template v-for="(navLink, i) in navLinks" :key="i">
-            <li class="nav-links">
+            <li class="nav-links text-inherit">
               <RouterLink
                   :to="{ name: navLink.route, force: true }"
               >
