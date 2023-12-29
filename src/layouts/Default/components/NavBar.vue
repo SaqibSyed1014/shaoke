@@ -37,7 +37,7 @@ const navColorCheck = computed(() => {
           <img src="/logo-shaoke.png" alt="Brand Logo" class="brand-logo" :class="[navColorCheck.logo]">
         </RouterLink>
 
-        <ul class="flex gap-4">
+        <ul class="hidden lg:flex gap-4">
           <template v-for="(navLink, i) in navLinks" :key="i">
             <li class="nav-links text-inherit">
               <RouterLink
@@ -49,8 +49,14 @@ const navColorCheck = computed(() => {
           </template>
         </ul>
 
-        <BaseButton>Track Your Parcel</BaseButton>
+        <div class="hidden lg:block">
+          <BaseButton>Track Your Parcel</BaseButton>
+        </div>
 
+        <span
+            class="inline lg:hidden icon-hamburger text-2xl text-inherit"
+            @click="$emit('toggleSidebar', true)"
+        />
       </div>
     </div>
   </nav>

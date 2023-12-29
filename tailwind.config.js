@@ -40,13 +40,7 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: {
-        'xxxs': '.3rem',
-        'xxs': '.6rem',
-        'md': '1rem',
-        '2xl': '3rem',
-        '3xl': '5rem'
-      }
+      padding: '1rem'
     },
   },
   plugins: [],
