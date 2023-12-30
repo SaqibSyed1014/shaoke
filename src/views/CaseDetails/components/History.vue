@@ -4,7 +4,7 @@ import SectionTitle from "@/@core/components/SectionTitle.vue";
 
 <template>
   <section class="case-history-section bg-[#F8F8F8]">
-    <div class="container pt-32 pb-14">
+    <div class="container pt-20 md:pt-32 pb-14">
       <SectionTitle
           sub-heading="Past"
           heading="History"

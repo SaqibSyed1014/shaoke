@@ -4,7 +4,7 @@ import PageTitle from "@/@core/components/PageTitle.vue";
 </script>
 
 <template>
-  <section class="about-history-section pb-32 pt-40">
+  <section class="about-history-section pb-20 md:pb-32 pt-40">
     <div class="container">
       <PageTitle />
 

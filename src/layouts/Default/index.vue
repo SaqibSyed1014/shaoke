@@ -6,6 +6,8 @@ import CookieBanner from "@/@core/components/CookieBanner.vue";
 import SideBar from "@/layouts/Default/components/SideBar.vue";
 
 const isSideBarOpen = ref(false)
+
+document.cookie = ''
 </script>
 
 <template>

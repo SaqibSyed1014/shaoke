@@ -69,18 +69,9 @@ import PageTitle from "@/@core/components/PageTitle.vue";
 
 <style scoped>
 ul li{
-  position: relative;
-  padding-left: 45px;
+  @apply relative pl-9 md:pl-10
 }
 ul li:before{
-  content: '';
-  display: block;
-  width: 14px;
-  height: 14px;
-  background: theme('colors.primary');
-  position: absolute;
-  left: 0;
-  top: 3px;
-  border-radius: 50%;
+  @apply content-[''] block w-3.5 h-3.5 bg-primary absolute left-0 top-1 md:top-1.5 rounded-full
 }
 </style>

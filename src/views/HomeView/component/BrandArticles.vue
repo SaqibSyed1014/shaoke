@@ -38,7 +38,7 @@ const blogLists = [
               <div class="blog-thumbnail">
                 <img :src="blog.image" alt="Blog Image" class="w-full h-full object-cover">
               </div>
-              <div class="uppercase text-sm pt-5 pb-3">
+              <div class="uppercase text-sm pt-5 pb-1 md:pb-3">
                 {{ blog.name }}
               </div>
               <h3 class="line-clamp-2 mb-3">

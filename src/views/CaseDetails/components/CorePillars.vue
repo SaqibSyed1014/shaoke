@@ -21,14 +21,14 @@ const pillars = [
 </script>
 
 <template>
-  <section class="case-core-pillars-section bg-[#F8F8F8] py-28">
+  <section class="case-core-pillars-section bg-[#F8F8F8] py-20 md:py-28">
     <div class="container">
       <SectionTitle
           sub-heading="Program"
           heading="Three core pillars"
       />
 
-      <div class="location-cards-wrapper relative">
+      <div class="location-cards-wrapper relative min-[500px]:px-10 md:px-0">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
           <template v-for="(item, i) in pillars" :key="i">
             <div class="flex flex-col justify-center text-center bg-white h-[350px]">
