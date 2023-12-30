@@ -21,9 +21,9 @@ const locationsList = [
 </script>
 
 <template>
-  <section class="brand-locations bg-[#F8F8F8] relative py-28">
+  <section class="brand-locations bg-[#F8F8F8] relative py-20 sm:py-28">
     <div class="container">
-      <div class="bg-curve absolute top-1/2 left-1/2 transform scale-[1.75] -translate-x-1/2 -translate-y-1/2">
+      <div class="hidden md:block bg-curve absolute top-1/2 left-1/2 transform scale-[1.75] -translate-x-1/2 -translate-y-1/2">
         <img src="/images/bg-curve.png" alt="Background Curve">
       </div>
       <SectionTitle
@@ -31,7 +31,7 @@ const locationsList = [
           heading="Various Locations"
       />
 
-      <div class="location-cards-wrapper relative">
+      <div class="location-cards-wrapper relative min-[500px]:px-10 md:px-0">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
           <template v-for="(item, i) in locationsList" :key="i">
             <div class="flex flex-col justify-center text-center bg-white h-[350px]">

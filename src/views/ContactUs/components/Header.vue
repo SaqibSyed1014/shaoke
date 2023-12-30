@@ -4,14 +4,14 @@ import PageTitle from "@/@core/components/PageTitle.vue";
 </script>
 
 <template>
-  <header class="contact-us-section py-32 pt-40">
+  <header class="contact-us-section pb-24 md:pb-32 pt-40">
     <div class="container">
       <PageTitle />
 
-      <div class="grid grid-cols-2 gap-10">
+      <div class="grid lg:grid-cols-2 gap-10">
         <div>
           <label>Contact Us</label>
-          <h2 class="pb-5 pt-3.5">
+          <h2 class="pb-5 pt-2 md:pt-3.5">
             Have Questions? Get in Touch!
           </h2>
           <p>

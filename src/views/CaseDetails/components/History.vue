@@ -26,7 +26,7 @@ import SectionTitle from "@/@core/components/SectionTitle.vue";
       </div>
     </div>
     <div class="content-with-bg py-24">
-      <div class="container pt-52 pb-36">
+      <div class="container py-20 md:pt-52 md:pb-36">
         <p class="text-center md:text-left text-white">
         As it laid its analytics foundation, Telkomsel knew it had to engage and strengthen its relevance with
         Indonesia’s Gen Z, the country’s second-largest consumer segment. The average data-hungry Gen Z consumer in

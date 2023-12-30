@@ -6,13 +6,13 @@ defineProps({
 </script>
 
 <template>
-  <div class="grid grid-cols-2 gap-14 pb-14 last:pb-0">
+  <div class="grid md:grid-cols-2 gap-14 pb-14 last:pb-0">
     <div
         class="client-details border-r border-[#DBDBDB]"
-        :class="[reverse ? 'order-2' : 'order-1']"
+        :class="[reverse ? 'order-1 md:order-2' : 'order-1']"
     >
-      <div class="flex flex-col justify-center border-b border-[#DBDBDB] py-10 md:pr-10">
-        <h2 class="text-[56px] pb-6">{{ content.name }}</h2>
+      <div class="flex flex-col justify-center border-b border-[#DBDBDB] py-10 md:pr-10 pr-3">
+        <h2 class="pb-6">{{ content.name }}</h2>
         <template v-for="(item, i) in content.details" :key="i">
           <h4 v-if="item.heading" class="pb-3.5">
             {{ item.heading }}
@@ -34,7 +34,7 @@ defineProps({
     </div>
     <div
         class="client-logo-wrapper shrink-0"
-        :class="[reverse ? 'order-1' : 'order-2']"
+        :class="[reverse ? 'order-2 md:order-1' : 'order-2']"
     >
       <img :src="content.image" :alt="content.name" class="mx-auto h-full object-contain">
     </div>

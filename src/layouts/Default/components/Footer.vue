@@ -45,7 +45,7 @@ const date = new Date()
 <template>
   <footer class="bg-navy text-white">
     <div class="container py-14">
-      <div class="grid lg:grid-cols-12 gap-14">
+      <div class="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-14">
         <div class="col-span-2">
           <div class="list-heading">Solution</div>
           <ul>
@@ -70,7 +70,7 @@ const date = new Date()
             </template>
           </ul>
         </div>
-        <div class="col-span-3">
+        <div class="col-span-2 lg:col-span-3">
           <div class="list-heading">Technologies</div>
           <ul>
             <template v-for="(stack, i) in tech" :key="i">
@@ -88,8 +88,10 @@ const date = new Date()
         </div>
       </div>
     </div>
+
     <hr class="border-t border-white/30" />
-    <div class="copyright-claim text-center py-6">
+
+    <div class="copyright-claim text-center py-3 md:py-6">
       <p>Copyright © {{ date.getFullYear() }} All rights reserved | Shaoke</p>
     </div>
   </footer>

@@ -1,4 +1,6 @@
 <script setup>
+import SectionTitle from "@/@core/components/SectionTitle.vue";
+
 const blogLists = [
   {
     name: 'Commercial',
@@ -22,18 +24,19 @@ const blogLists = [
 </script>
 
 <template>
-  <div class="brand-articles py-32">
+  <div class="brand-articles py-20 sm:py-32">
     <div class="container">
-      <div class="text-center pb-14">
-        <label>BLOG POSTS</label>
-        <h2 class="pt-3.5">Our Latest Articles</h2>
-      </div>
+      <SectionTitle
+        sub-heading="Blog Post"
+        heading="Our Latest Articles"
+      />
+
       <div class="blog-articles-list">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           <template v-for="(blog, index) in blogLists" :key="index">
             <div class="blog-card flex flex-col cursor-pointer">
               <div class="blog-thumbnail">
-                <img :src="blog.image" alt="Blog Image">
+                <img :src="blog.image" alt="Blog Image" class="w-full h-full object-cover">
               </div>
               <div class="uppercase text-sm pt-5 pb-3">
                 {{ blog.name }}

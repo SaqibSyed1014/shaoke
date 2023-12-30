@@ -8,12 +8,12 @@ const servicesList = [
 </script>
 
 <template>
-  <section class="brand-services py-32">
+  <section class="brand-services py-24 sm:py-32">
     <div class="container">
       <label>
         Top Services
       </label>
-      <div class="flex justify-between items-center gap-20 pb-16">
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-5 lg:gap-20 pb-16">
         <h2>
           Focus on what you do best, and Shaoke will take care of the rest
         </h2>
@@ -23,9 +23,12 @@ const servicesList = [
         </p>
       </div>
 
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
         <template v-for="(service, i) in servicesList" :key="i">
-          <div class="flex flex-col justify-between border-r border-[#DBDBDB] last:border-0 py-10">
+          <div
+              class="flex flex-col justify-between border-b md:border-r md:border-b-0 border-[#DBDBDB] md:last:border-0 py-10"
+              :class="{'md:border-r-0 lg:border-r': i % 2 !== 0}"
+          >
             <span
                 :class="[`icon-${service.icon}`]"
                 class="text-primary text-8xl"

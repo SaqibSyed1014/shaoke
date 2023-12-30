@@ -1,5 +1,6 @@
 <script setup>
 import DetailingWithImage from "@/@core/components/DetailingWithImage.vue";
+import SectionTitle from "@/@core/components/SectionTitle.vue";
 
 const caseLists = [
   {
@@ -30,10 +31,11 @@ const caseLists = [
 <template>
   <section class="brand-clients pb-32">
     <div class="container">
-      <div class="text-center pb-14">
-        <label>Our Clients</label>
-        <h2 class="pt-3.5">Case Study</h2>
-      </div>
+      <SectionTitle
+        sub-heading="Our Clients"
+        heading="Case Study"
+      />
+
       <div class="clients-content">
         <template v-for="(item, i) in caseLists" :key="i">
           <DetailingWithImage

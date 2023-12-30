@@ -19,17 +19,17 @@ const solutions = [
 </script>
 
 <template>
-  <section class="brand-solutions bg-primary mb-40">
+  <section class="brand-solutions bg-primary lg:mb-40 py-24 sm:py-32 lg:py-0">
     <div class="container">
-      <div class="flex">
-        <div class="flex flex-col justify-center text-white py-16">
+      <div class="flex flex-col lg:flex-row">
+        <div class="flex flex-col justify-center text-white pb-16 lg:py-16">
           <label class="text-inherit">reasonable</label>
           <h2 class="text-inherit pt-4">
             Economical Solutions
           </h2>
         </div>
 
-        <div class="grid grid-cols-3 gap-3.5">
+        <div class="hidden lg:grid grid-cols-3 gap-3.5">
           <template v-for="(item, i) in solutions" :key="i">
             <div class="flex flex-col justify-center -my-10 z-10 !h-96 bg-white px-5 shadow-[-40px_100px_70px_0px_rgba(121,121,121,0.05)]">
               <span
@@ -42,6 +42,25 @@ const solutions = [
               <p>
                 {{ item.text }}
               </p>
+            </div>
+          </template>
+        </div>
+
+        <div class="grid lg:hidden md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <template v-for="(item, i) in solutions" :key="i">
+            <div class="flex flex-col justify-center text-center bg-white h-[350px]">
+              <div class="px-12">
+                <span
+                    class="text-primary text-8xl"
+                    :class="[`icon-${item.icon}`]"
+                />
+                <h3 class="mt-5">
+                  {{ item.heading }}
+                </h3>
+                <p class="capitalize pt-3.5">
+                  {{ item.text }}
+                </p>
+              </div>
             </div>
           </template>
         </div>

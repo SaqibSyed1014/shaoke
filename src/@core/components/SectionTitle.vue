@@ -10,7 +10,7 @@ defineProps({
     <label>
       {{ subHeading }}
     </label>
-    <h2 class="pt-3.5">
+    <h2 class="md:pt-2 lg:pt-3.5">
       {{ heading }}
     </h2>
   </div>

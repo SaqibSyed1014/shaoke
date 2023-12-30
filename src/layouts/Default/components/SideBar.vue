@@ -66,7 +66,7 @@ const navLinks = [
       </ul>
 
       <BaseButton>
-        Track your parcel
+        Track Your Parcel
       </BaseButton>
     </div>
   </div>

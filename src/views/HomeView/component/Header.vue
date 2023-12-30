@@ -6,7 +6,7 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <h1 class="text-6xl text-inherit">
+        <h1 class="text-inherit">
           Cross-border Logistics Expert
         </h1>
         <p class="pt-5 font-light text-inherit capitalize md:pr-16">
@@ -25,6 +25,6 @@ header{
   background-size: cover;
 }
 .header-content{
-  @apply max-w-[475px] pt-[82px] h-[100vh] flex flex-col justify-center items-center text-white font-bold
+  @apply sm:max-w-[475px] pt-[82px] h-[100vh] flex flex-col justify-center items-center text-white font-bold text-center sm:text-left
 }
 </style>
