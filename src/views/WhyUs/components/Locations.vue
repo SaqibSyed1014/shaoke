@@ -21,9 +21,9 @@ const locationsList = [
 </script>
 
 <template>
-  <section class="brand-locations bg-[#F8F8F8] relative py-20 sm:py-28">
-    <div class="container">
-      <div class="hidden md:block bg-curve absolute top-1/2 left-1/2 transform scale-[1.75] -translate-x-1/2 -translate-y-1/2">
+  <section class="brand-locations bg-[#F8F8F8] py-20 sm:py-28">
+    <div class="container relative">
+      <div class="hidden lg:block bg-curve absolute top-1/2 left-1/2 transform lg:scale-[1.75] xl:scale-[1.25] -translate-x-1/2 -translate-y-1/4">
         <img src="/images/bg-curve.png" alt="Background Curve">
       </div>
       <SectionTitle

@@ -36,7 +36,7 @@ const blogLists = [
           <template v-for="(blog, index) in blogLists" :key="index">
             <div class="blog-card flex flex-col cursor-pointer">
               <div class="blog-thumbnail">
-                <img :src="blog.image" alt="Blog Image" class="w-full h-full object-cover">
+                <img :src="blog.image" alt="Blog Image">
               </div>
               <div class="uppercase text-sm pt-5 pb-1 md:pb-3">
                 {{ blog.name }}

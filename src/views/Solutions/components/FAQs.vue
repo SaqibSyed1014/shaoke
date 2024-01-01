@@ -37,17 +37,19 @@ const faqList = ref([
       <div class="faqs-wrapper md:w-3/4 mx-auto">
         <template v-for="(item, i) in faqList" :key="i">
           <div class="faq-item border-b border-[#DBDBDB] cursor-pointer pb-6 pt-9" @click="faqList[i].isOpened = !faqList[i].isOpened">
-            <div class="flex flex-wrap justify-between items-center gap-6">
-              <h4>
-                {{ item.title }}
-              </h4>
-              <div
-                  class="flex justify-center items-center cursor-pointer rounded-full text-2xl text-white w-10 h-10 shrink-0"
-                  :class="[faqList[i].isOpened ? 'bg-[#D0D0D1]' : 'bg-primary']"
-              >
-                {{ faqList[i].isOpened ? '-' : '+' }}
+            <div class="flex flex-col gap-6">
+              <div class="flex justify-between">
+                <h4>
+                  {{ item.title }}
+                </h4>
+                <div
+                    class="flex justify-center items-center cursor-pointer rounded-full text-2xl text-white w-10 h-10 shrink-0"
+                    :class="[faqList[i].isOpened ? 'bg-[#D0D0D1]' : 'bg-primary']"
+                >
+                  {{ faqList[i].isOpened ? '-' : '+' }}
+                </div>
               </div>
-              <p v-if="item.isOpened" class="pr-6 block">
+              <p v-if="item.isOpened" class="md:pr-6 block">
                 {{ item.content }}
               </p>
             </div>

@@ -26,6 +26,13 @@ const navColorCheck = computed(() => {
     logo: ['HomeView'].includes(route.name) ? '' : 'brightness-0'
   }
 })
+
+//nav:not(.bg-white) .nav-links{
+//  @apply hover:text-primary
+//}
+//nav:is(.bg-white) .nav-links{
+//  @apply hover:text-red-500
+//}
 </script>
 
 <template>
@@ -37,7 +44,7 @@ const navColorCheck = computed(() => {
           <img src="/logo-shaoke.png" alt="Brand Logo" class="brand-logo" :class="[navColorCheck.logo]">
         </RouterLink>
 
-        <ul class="hidden lg:flex gap-4">
+        <ul class="hidden lg:flex gap-5 xl:gap-8">
           <template v-for="(navLink, i) in navLinks" :key="i">
             <li class="nav-links text-inherit">
               <RouterLink
@@ -64,6 +71,27 @@ const navColorCheck = computed(() => {
 
 <style scoped>
 .nav-links {
-  @apply text-sm lg:text-base font-bold
+  @apply text-sm lg:text-base xl:text-xl font-bold tracking-[.2px] relative inline-block
+}
+
+.nav-links:after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: theme('colors.primary');
+  transition: width 0.3s ease-in-out;
+}
+nav:not(.bg-white) .nav-links:after{
+  background-color: white;
+}
+nav:is(.text-navy) .nav-links:after{
+  background-color: theme('colors.navy');
+}
+.nav-links:hover:after{
+  width: 100%;
 }
 </style>

@@ -63,12 +63,14 @@ const casesCategories = [
       <PageTitle />
 
       <div class="cases-filtration md:px-5">
-        <div class="flex flex-wrap lg:flex-nowrap md:justify-center items-center gap-3 md:gap-6 border-b border-[#DBDBDB] pb-5 mb-10">
-          <span class="text-sm sm:text-lg font-medium cursor-pointer active">All</span>
-          <template v-for="item in casesCategories" :key="item">
-            <div class="text-sm sm:text-lg font-medium cursor-pointer">{{ item }}</div>
-          </template>
-          <div class="w-full sm:w-fit">
+        <div class="flex flex-wrap lg:flex-nowrap justify-between gap-5 border-b border-[#DBDBDB] pb-5 mb-10">
+          <div class="flex flex-wrap lg:flex-nowrap md:justify-center items-center gap-3 md:gap-6 xl:gap-8">
+            <span class="text-sm sm:text-lg font-medium cursor-pointer active">All</span>
+            <template v-for="item in casesCategories" :key="item">
+              <div class="text-sm sm:text-lg font-medium cursor-pointer">{{ item }}</div>
+            </template>
+          </div>
+          <div class="w-full sm:w-1/3 lg:w-1/4 ml-auto">
             <input type="search" placeholder="Search">
           </div>
         </div>
