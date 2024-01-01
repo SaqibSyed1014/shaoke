@@ -2,7 +2,7 @@
 const servicesList = [
   { serviceName: 'Customs Service', icon: 'custom-list'  },
   { serviceName: 'Linehaul and Warehousing', icon: 'warehouse'  },
-  { serviceName: 'Last Mile', icon: 'shipping-worldwide'  },
+  { serviceName: 'Last Mile', icon: 'package-dropping'  },
   { serviceName: 'Fulfillment', icon: 'shipping-process'  },
 ]
 </script>
@@ -37,9 +37,9 @@ const servicesList = [
               <h3 class="mt-14 mb-10 pr-10">
               {{ service.serviceName }}
               </h3>
-              <span class="flex items-center gap-3 cursor-pointer w-fit">
+              <span class="flex items-center gap-3 cursor-pointer w-fit group hover:text-primary transition">
                 Read More
-                <span class="icon-right-long-arrow mt-1"></span>
+                <span class="icon-right-long-arrow mt-1 group-hover:translate-x-3 transition ease-in-out"></span>
               </span>
             </div>
           </div>

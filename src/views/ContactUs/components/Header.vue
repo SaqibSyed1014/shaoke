@@ -4,7 +4,7 @@ import PageTitle from "@/@core/components/PageTitle.vue";
 </script>
 
 <template>
-  <header class="contact-us-section pb-24 md:pb-32 pt-40">
+  <header class="contact-us-section pb-16 md:pb-32 pt-40">
     <div class="container">
       <PageTitle />
 
@@ -17,10 +17,19 @@ import PageTitle from "@/@core/components/PageTitle.vue";
           <p>
             Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
           </p>
-          <div>
-            <p>14 Rue de la Belle Borne Bat1, Porte 13 (Cargo 8) Tremblay-en-France, France</p>
-            <p>+1 840 841 25 69</p>
-            <p>info@shaoke.com</p>
+          <div class="pt-2">
+            <div class="flex gap-3">
+              <span class="icon-pin-location text-primary text-xl font-bold" />
+              <p>14 Rue de la Belle Borne Bat1, Porte 13 (Cargo 8) Tremblay-en-France, France</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="icon-phone text-primary text-xl" />
+              <p>+1 840 841 25 69</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="icon-mail text-primary text-xl" />
+              <p>info@shaoke.com</p>
+            </div>
           </div>
         </div>
         <div class="contact-form">

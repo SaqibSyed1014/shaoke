@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?6wg3zt');
-  src:  url('fonts/icomoon.eot?6wg3zt#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?6wg3zt') format('truetype'),
-    url('fonts/icomoon.woff?6wg3zt') format('woff'),
-    url('fonts/icomoon.svg?6wg3zt#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?r66jvw');
+  src:  url('fonts/icomoon.eot?r66jvw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?r66jvw') format('truetype'),
+    url('fonts/icomoon.woff?r66jvw') format('woff'),
+    url('fonts/icomoon.svg?r66jvw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-location-fill:before {
+  content: "\e911";
+}
 .icon-cookie:before {
   content: "\e90b";
 }
@@ -64,11 +67,20 @@
 .icon-facebook:before {
   content: "\e990";
 }
+.icon-pin-location:before {
+  content: "\e91d";
+}
 .icon-hamburger:before {
   content: "\e90d";
 }
 .icon-linkedin-square:before {
   content: "\e991";
+}
+.icon-mail:before {
+  content: "\e912";
+}
+.icon-phone:before {
+  content: "\e913";
 }
 .icon-x:before {
   content: "\e90c";

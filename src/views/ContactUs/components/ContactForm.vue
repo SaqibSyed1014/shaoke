@@ -1,5 +1,6 @@
 <script setup>
 
+import BaseButton from "@/@core/components/BaseButton.vue";
 </script>
 
 <template>
@@ -27,6 +28,9 @@
     <div class="col-span-2">
       <label>Message</label>
       <textarea type="text" rows="5" placeholder="How can  we help you" />
+    </div>
+    <div class="col-span-2">
+      <BaseButton>Get in touch</BaseButton>
     </div>
   </form>
 </template>

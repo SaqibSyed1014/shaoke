@@ -87,12 +87,12 @@ const casesCategories = [
             </p>
             <hr class="border-t border-[#DBDBDB] my-3">
             <RouterLink :to="{ name: 'CasesDetailsView' }">
-              <div class="flex items-center gap-5 cursor-pointer w-fit">
+              <div class="flex items-center gap-5 cursor-pointer w-fit group">
                 <div
                     class="flex justify-center items-center cursor-pointer rounded-full bg-primary text-white w-12 h-12 shrink-0">
                   <span class="icon-right-long-arrow rotate-[325deg] text-lg"></span>
                 </div>
-                <span class="font-medium">View Details</span>
+                <span class="font-medium group-hover:text-primary transition">View Details</span>
               </div>
             </RouterLink>
           </div>

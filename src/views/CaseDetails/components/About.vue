@@ -8,7 +8,7 @@ import PageTitle from "@/@core/components/PageTitle.vue";
     <div class="container">
       <PageTitle />
 
-      <div class="grid md:grid-cols-2 gap-20">
+      <div class="grid md:grid-cols-2 gap-7 md:gap-20">
         <div class="content">
           <label>About Us</label>
           <h2 class="py-3.5">Story of Shipkoo</h2>
