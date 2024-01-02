@@ -205,7 +205,7 @@ const markers = [
         :options="options"
         :zoom="14"
         map-type-id="terrain"
-        style="width: 100%; height: 20rem;"
+        class="w-full h-80 xl:h-96"
     >
         <GMapMarker
             :key="index"
