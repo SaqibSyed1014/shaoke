@@ -44,9 +44,9 @@ const navColorCheck = computed(() => {
           <img src="/logo-shaoke.png" alt="Brand Logo" class="brand-logo" :class="[navColorCheck.logo]">
         </RouterLink>
 
-        <ul class="hidden lg:flex gap-5 xl:gap-8">
+        <ul class="hidden lg:flex gap-7 xl:gap-12">
           <template v-for="(navLink, i) in navLinks" :key="i">
-            <li class="nav-links text-inherit">
+            <li class="nav-links text-inherit" :class="{ 'active-view':  route.name === navLink.route }">
               <RouterLink
                   :to="{ name: navLink.route, force: true }"
               >
@@ -61,7 +61,7 @@ const navColorCheck = computed(() => {
         </div>
 
         <span
-            class="inline lg:hidden icon-hamburger text-2xl text-inherit"
+            class="inline lg:hidden icon-styled-hamburger text-2xl text-inherit"
             @click="$emit('toggleSidebar', true)"
         />
       </div>
@@ -74,22 +74,39 @@ const navColorCheck = computed(() => {
   @apply text-sm lg:text-base xl:text-xl font-bold tracking-[.2px] relative inline-block
 }
 
-.nav-links:after{
+.nav-links:after, .active-view:after{
   content: '';
   display: block;
   position: absolute;
   bottom: -3px;
   left: 0;
-  width: 0;
   height: 2px;
   background-color: theme('colors.primary');
   transition: width 0.3s ease-in-out;
+}
+.nav-links:after{
+  width: 0;
+}
+.nav-links.active-view:after{
+  width: 100%;
 }
 nav:not(.bg-white) .nav-links:after{
   background-color: white;
 }
 nav:is(.text-navy) .nav-links:after{
   background-color: theme('colors.navy');
+}
+nav:is(.text-navy) .nav-links.active-view:after{
+  background-color: theme('colors.primary');
+}
+nav:not(.bg-white) .active-view{
+  color: white;
+}
+nav:not(.bg-white) .active-view:after{
+  background-color: white;
+}
+.active-view{
+  color: theme('colors.primary');
 }
 .nav-links:hover:after{
   width: 100%;

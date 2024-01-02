@@ -17,7 +17,7 @@ import PageTitle from "@/@core/components/PageTitle.vue";
           <p>
             Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
           </p>
-          <div class="pt-2">
+          <div class="flex flex-col gap-3 xl:gap-5 pt-3 xl:pt-5">
             <div class="flex gap-3">
               <span class="icon-pin-location text-primary text-xl font-bold" />
               <p>14 Rue de la Belle Borne Bat1, Porte 13 (Cargo 8) Tremblay-en-France, France</p>
