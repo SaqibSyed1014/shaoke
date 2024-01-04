@@ -5,7 +5,11 @@ const route = useRoute()
 </script>
 
 <template>
-  <div class="text-center pb-20 md:pb-32">
+  <div
+      class="text-center pb-20 md:pb-32"
+      data-aos="fade-down"
+      data-aos-offset="10"
+  >
     <h1>{{ route.meta?.title }}</h1>
   </div>
 </template>

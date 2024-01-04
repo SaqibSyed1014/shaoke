@@ -31,7 +31,11 @@ const pillars = [
       <div class="location-cards-wrapper relative min-[500px]:px-10 md:px-0">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
           <template v-for="(item, i) in pillars" :key="i">
-            <div class="flex flex-col justify-center text-center bg-white h-[350px]">
+            <div
+                class="flex flex-col justify-center text-center bg-white h-[350px]"
+                data-aos="fade-up"
+                :data-aos-delay="i * 200"
+            >
               <div class="px-12">
                 <span
                     class="text-primary text-8xl"

@@ -63,7 +63,10 @@ const casesCategories = [
       <PageTitle />
 
       <div class="cases-filtration md:px-5">
-        <div class="flex flex-wrap lg:flex-nowrap justify-between gap-5 border-b border-[#DBDBDB] pb-5 mb-10">
+        <div
+            class="flex flex-wrap lg:flex-nowrap justify-between gap-5 border-b border-[#DBDBDB] pb-5 mb-10"
+            data-aos="fade-up"
+        >
           <div class="flex flex-wrap lg:flex-nowrap md:justify-center items-center gap-3 md:gap-6 xl:gap-8">
             <span class="text-sm sm:text-lg font-medium cursor-pointer active">All</span>
             <template v-for="item in casesCategories" :key="item">
@@ -77,7 +80,11 @@ const casesCategories = [
       </div>
       <div class="cases-list grid md:grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-8">
         <template v-for="(item, i) in cases" :key="i">
-          <div class="blog-card flex flex-col cursor-pointer">
+          <div
+              class="blog-card flex flex-col cursor-pointer"
+              data-aos="fade-up"
+              :data-aos-delay="i * 200"
+          >
             <div class="blog-thumbnail">
               <img :src="item.image" alt="Blog Image">
             </div>

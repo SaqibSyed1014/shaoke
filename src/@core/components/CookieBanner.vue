@@ -29,8 +29,8 @@ const updateCookieBanner = () => {
               </BaseButton>
               <BaseButton outlined @click="() => emits('toggleCookieBanner')">Decline</BaseButton>
             </div>
-            <span @click="updateCookieBanner" class="icon-x text-3xl text-[#272D4B] cursor-pointer hidden sm:block"></span>
-            <span @click="updateCookieBanner" class="icon-x text-2xl text-[#272D4B] absolute top-1 right-1 sm:hidden"></span>
+            <span @click="() => emits('toggleCookieBanner')" class="icon-x text-3xl text-[#272D4B] cursor-pointer hidden sm:block"></span>
+            <span @click="() => emits('toggleCookieBanner')" class="icon-x text-2xl text-[#272D4B] absolute top-1 right-1 sm:hidden"></span>
           </div>
         </div>
       </div>

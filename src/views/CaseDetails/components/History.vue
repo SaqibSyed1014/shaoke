@@ -11,16 +11,16 @@ import SectionTitle from "@/@core/components/SectionTitle.vue";
       />
 
       <div class="content text-center">
-        <p>
+        <p data-aos="fade-up">
           By 2024, if all goes according to plan, a pair of submarine cables will connect the west coast of the United States with Indonesia for the first time. Built by Facebook with help from Google, the cables could boost data capacity to southeast Asia’s largest economy by 70 percent.
         </p>
-        <p>
+        <p data-aos="fade-up">
           By 2024, if all goes according to plan, a pair of submarine cables will connect the west coast of the United States with Indonesia for the first time. Built by Facebook with help from Google, the cables could boost data capacity to southeast Asia’s largest economy by 70 percent.
         </p>
-        <p class="py-5 sm:py-7">
+        <p class="py-5 sm:py-7" data-aos="fade-up">
           By 2024, if all goes according to plan, a pair of submarine cables will connect the west coast of the United States with Indonesia for the first time. Built by Facebook with help from Google, the cables could boost data capacity to southeast Asia’s largest economy by 70 percent.
         </p>
-        <p>
+        <p data-aos="fade-up">
           By 2024, if all goes according to plan, a pair of submarine cables will connect the west coast of the United States with Indonesia for the first time. Built by Facebook with help from Google, the cables could boost data capacity to southeast Asia’s largest economy by 70 percent.
         </p>
       </div>

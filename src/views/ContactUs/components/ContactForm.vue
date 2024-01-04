@@ -5,31 +5,56 @@ import BaseButton from "@/@core/components/BaseButton.vue";
 
 <template>
   <form class="grid md:grid-cols-2 gap-5">
-    <div class="col-span-2">
+    <div
+        class="col-span-2"
+        data-aos="fade-up"
+    >
       <label>Purpose</label>
       <input required type="text" placeholder="Choose">
     </div>
-    <div class="col-span-2 md:col-span-1">
+    <div
+        class="col-span-2 md:col-span-1"
+        data-aos="fade-up"
+        :data-aos-delay="200"
+    >
       <label>Name</label>
       <input required type="text" placeholder="Alex">
     </div>
-    <div class="col-span-2 md:col-span-1">
+    <div
+        class="col-span-2 md:col-span-1"
+        data-aos="fade-up"
+        :data-aos-delay="400"
+    >
       <label>Phone</label>
       <input type="text" placeholder="+1 840 841 25 69">
     </div>
-    <div class="col-span-2 md:col-span-1">
+    <div
+        class="col-span-2 md:col-span-1"
+        data-aos="fade-up"
+        :data-aos-delay="600"
+    >
       <label>Email</label>
       <input required type="email" placeholder="abc@gmail.com">
     </div>
-    <div class="col-span-2 md:col-span-1">
+    <div
+        class="col-span-2 md:col-span-1"
+        data-aos="fade-up"
+        :data-aos-delay="800"
+    >
       <label>Subject</label>
       <input type="text" placeholder="Business">
     </div>
-    <div class="col-span-2">
+    <div
+        class="col-span-2"
+        data-aos="fade-up"
+    >
       <label>Message</label>
       <textarea type="text" rows="5" placeholder="How can  we help you" />
     </div>
-    <div class="col-span-2">
+    <div
+        class="col-span-2"
+        data-aos="fade-up"
+    >
       <div class="inline-flex sm:items-center">
         <div class="relative flex items-start sm:items-center pt-0.5 sm:pt-0 pb-0 cursor-pointer">
           <input
@@ -51,7 +76,10 @@ import BaseButton from "@/@core/components/BaseButton.vue";
         </label>
       </div>
     </div>
-    <div class="col-span-2">
+    <div
+        class="col-span-2"
+        data-aos="fade-up"
+    >
       <BaseButton class="w-full sm:w-auto">Get in touch</BaseButton>
     </div>
   </form>

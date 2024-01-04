@@ -8,7 +8,7 @@ import PageTitle from "@/@core/components/PageTitle.vue";
     <div class="container">
       <PageTitle />
 
-      <div class="grid lg:grid-cols-2 gap-10">
+      <div class="grid lg:grid-cols-2 gap-10" data-aos="fade-up">
         <div>
           <label>Contact Us</label>
           <h2 class="pb-5 pt-2 md:pt-3.5">

@@ -199,7 +199,7 @@ const markers = [
 </script>
 
 <template>
-  <section class="relative">
+  <section class="relative" data-aos="fade-in">
     <GMapMap
         :center="center"
         :options="options"

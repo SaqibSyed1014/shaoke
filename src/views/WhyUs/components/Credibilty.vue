@@ -28,7 +28,11 @@ const items = [
       <div class="services-wrapper">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <template v-for="(item, i) in items" :key="i">
-            <div class="">
+            <div
+                data-aos="fade-up"
+                :data-aos-delay="(i+1) * 400"
+                data-aos-anchor-placement="top-center"
+            >
               <img :src="item.image" alt="Pictures" class="w-full h-full object-cover">
               <h3 class="text-lg sm:text-2xl -mt-24 sm:-mt-28 text-white w-[90%] pl-7">
                 {{ item.text }}

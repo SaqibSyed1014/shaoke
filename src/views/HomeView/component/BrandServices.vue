@@ -9,7 +9,7 @@ const servicesList = [
 
 <template>
   <section class="brand-services py-24 sm:py-32">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <label>
         Top Services
       </label>
@@ -28,6 +28,8 @@ const servicesList = [
           <div
               class="flex flex-col justify-between border-b md:border-r md:border-b-0 border-[#DBDBDB] md:last:border-0 py-10"
               :class="{'md:border-r-0 lg:border-r': i % 2 !== 0}"
+              data-aos="fade-up"
+              :data-aos-delay="i*200"
           >
             <span
                 :class="[`icon-${service.icon}`]"

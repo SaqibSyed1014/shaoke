@@ -36,7 +36,12 @@ const faqList = ref([
 
       <div class="faqs-wrapper md:w-3/4 mx-auto">
         <template v-for="(item, i) in faqList" :key="i">
-          <div class="faq-item border-b border-[#DBDBDB] cursor-pointer pb-6 pt-9" @click="faqList[i].isOpened = !faqList[i].isOpened">
+          <div
+              class="faq-item border-b border-[#DBDBDB] cursor-pointer pb-6 pt-9"
+              @click="faqList[i].isOpened = !faqList[i].isOpened"
+              data-aos="fade-up"
+              :data-aos-delay="i * 200"
+          >
             <div class="flex flex-col gap-6">
               <div class="flex justify-between">
                 <h4>
@@ -57,7 +62,10 @@ const faqList = ref([
         </template>
       </div>
 
-      <div class="pt-9 md:pt-14 lg:pt-[76px]">
+      <div
+          class="pt-9 md:pt-14 lg:pt-[76px]"
+          data-aos="fade-up"
+      >
         <BaseButton class="mx-auto">View All Answers</BaseButton>
       </div>
     </div>

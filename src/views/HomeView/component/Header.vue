@@ -5,7 +5,7 @@
 <template>
   <header>
     <div class="container">
-      <div class="header-content">
+      <div class="header-content" data-aos="fade-right">
         <h1 class="text-inherit">
           Cross-border Logistics Expert
         </h1>

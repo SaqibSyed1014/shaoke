@@ -31,10 +31,14 @@ const blogLists = [
         heading="Our Latest Articles"
       />
 
-      <div class="blog-articles-list">
+      <div class="blog-articles-list pt-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           <template v-for="(blog, index) in blogLists" :key="index">
-            <div class="blog-card flex flex-col cursor-pointer">
+            <div
+                class="blog-card flex flex-col cursor-pointer"
+                data-aos="fade-up"
+                :data-aos-delay="index * 200"
+            >
               <div class="blog-thumbnail">
                 <img :src="blog.image" alt="Blog Image">
               </div>
