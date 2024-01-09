@@ -8,6 +8,8 @@ A linguistic website built in vue 3 + vite and tailwind
 - vue-router
 - tailwindCSS
 - vitejs
+- AOS scroll animation
+- google maps api
 - autoprefixer
 
 ## Project Setup
