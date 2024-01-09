@@ -9,7 +9,7 @@ defineProps({
   }
 })
 
-const emit = defineEmits(['toggleMenuSidebar'])
+const emit = defineEmits(['toggleSidebar'])
 
 let startX = 0;
 let endX = 0;

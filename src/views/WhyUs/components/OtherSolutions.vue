@@ -55,10 +55,12 @@ const solutions = [
         </div>
 
         <div class="grid lg:hidden md:grid-cols-2 lg:grid-cols-3 gap-7">
-          <template v-for="(item, i) in solutions" :key="i">
             <div
+                v-for="(item, i) in solutions"
+                :key="i"
                 class="flex flex-col justify-center text-center bg-white h-[350px]"
                 :data-aos-delay="i * 400"
+                data-aos-anchor-placement="top-center"
             >
               <div class="px-12">
                 <span
@@ -73,7 +75,6 @@ const solutions = [
                 </p>
               </div>
             </div>
-          </template>
         </div>
       </div>
     </div>

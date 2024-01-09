@@ -4,6 +4,8 @@ import BaseButton from "@/@core/components/BaseButton.vue";
 import { toggleNavShadow } from "@/@core/utils/functions";
 import {useRoute} from "vue-router";
 
+const emit = defineEmits(['toggleSidebar'])
+
 const route = useRoute()
 onMounted(() => {
   window.addEventListener('scroll', () => toggleNavShadow(route.name));
@@ -26,13 +28,6 @@ const navColorCheck = computed(() => {
     logo: ['HomeView'].includes(route.name) ? '' : 'brightness-0'
   }
 })
-
-//nav:not(.bg-white) .nav-links{
-//  @apply hover:text-primary
-//}
-//nav:is(.bg-white) .nav-links{
-//  @apply hover:text-red-500
-//}
 </script>
 
 <template>
@@ -61,8 +56,8 @@ const navColorCheck = computed(() => {
         </div>
 
         <span
-            class="inline lg:hidden icon-styled-hamburger text-2xl text-inherit"
-            @click="$emit('toggleSidebar', true)"
+            class="inline lg:hidden icon-styled-hamburger text-lg text-inherit"
+            @click="emit('toggleSidebar', true)"
         />
       </div>
     </div>

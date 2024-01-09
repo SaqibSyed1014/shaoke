@@ -79,10 +79,12 @@ const casesCategories = [
         </div>
       </div>
       <div class="cases-list grid md:grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-8">
-        <template v-for="(item, i) in cases" :key="i">
           <div
+              v-for="(item, i) in cases"
+              :key="i"
               class="blog-card flex flex-col cursor-pointer"
               data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
               :data-aos-delay="i * 200"
           >
             <div class="blog-thumbnail">
@@ -105,7 +107,6 @@ const casesCategories = [
               </div>
             </RouterLink>
           </div>
-        </template>
       </div>
     </div>
   </section>

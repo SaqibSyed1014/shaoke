@@ -36,11 +36,12 @@ const locationsList = [
 
       <div class="location-cards-wrapper relative min-[500px]:px-10 md:px-0">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
-          <template v-for="(item, i) in locationsList" :key="i">
             <div
+                v-for="(item, i) in locationsList"
+                :key="i"
                 class="flex flex-col justify-center text-center bg-white h-[350px]"
                 data-aos="fade-up"
-                :data-aos-delay="(i+1) * 400"
+                :data-aos-delay="(i + 1) * 400"
                 data-aos-anchor-placement="top-center"
             >
               <div class="px-12">
@@ -56,7 +57,6 @@ const locationsList = [
                 </p>
               </div>
             </div>
-          </template>
         </div>
       </div>
 
